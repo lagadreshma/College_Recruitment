@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.two-col{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.admin{
+    max-width:1200px;
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.admin h2{
+    color: #f61f14;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.admin form{
+    padding: 30px 50px;
+    background: #f6f6f9;
+    width: 500px;
+    height: 400px;
+}
+.admin .form input{
+   padding: 10px 20px;
+   outline: none;
+   width: 100%;
+   border: 1px solid #f61f14;
+   border-radius: 5px;
+}
+.admin .two-col span{
+   font-size: 18px;
+   margin-top: 10px;
+}
+.admin .form .btn{
+    background: #f61f14;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    width: 25%;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.admin .btn:hover{
+    background: rgb(73, 73, 219);
+    border: 1px solid rgb(73, 73, 219);
+}
+.admin .answer{
+    margin-top: 15px;
+    color: red;
+    background:rgb(255, 193, 193);
+}
+
+/* media Query for login form */
+
+@media only screen and (max-width: 1110px){
+
+.admin{
+    margin: 50px;
+}
+
+}
+
+@media only screen and (max-width: 990px){
+
+.admin{
+    margin: 20px;
+}
+.admin h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.admin form{
+    width: 450px;
+    height: 400px;
+}
+.admin .form input{
+   padding: 10px 20px;
+   width: 100%;
+}
+.admin .form .btn{
+    font-size: 18px;
+}
+.admin .answer{
+    margin-top: 8px;
+}
+
+
+}
+
+@media only screen and (max-width: 800px){
+
+.admin{
+    margin: 20px;
+}
+.admin form{
+    padding: 30px 20px;
+    width: 400px;
+    height: 400px;
+}
+.admin h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.admin .form input{
+   padding: 10px 15px;
+   width: 80%;
+}
+.admin .form .btn{
+    font-size: 14px;
+}
+.admin .answer{
+    margin-top: 5px;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+
+ .admin{
+    margin: 10px;
+ }
+ .admin form{
+    padding: 20px 10px;
+    width: 300px;
+    height: 300px;
+}
+.admin h2{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.admin .form input{
+   padding: 10px 10px;
+   font-size: 12px;
+}
+.admin .form .btn{
+    font-size: 12px;
+}
+.admin .answer{
+    margin-top: 6px;
+}
+
+}
+
+@media only screen and (max-width: 600px){
+  
+.admin form{
+    width: 250px;
+    height: 300px;
+}
+.admin .form input{
+   padding: 10px 10px;
+}
+.admin .answer{
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+}

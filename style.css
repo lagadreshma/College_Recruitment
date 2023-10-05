@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --blue: #3742fa;
+    --red: #e31511;
+    --brown: brown;
+    --violet: rgb(184, 25, 184);
+    --orange: orange;
+    --yellow: rgb(203, 203, 21);
+    --light: #e5e5e5;
+    --gray: #555;
+    --background: #edf2fc;
+    --form: #ebfcfc;
+    --green: rgb(18, 207, 18);
+    --submit: rgb(3, 202, 3);
+    --border: rgb(184, 184, 252);
+    --shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ------------------------------------------------------------------------------------------
+                                   Home Page 
+--------------------------------------------------------------------------------------------- */
+
+/* -------------------- Navigation Bar ------------------ */
+.header {
+    background: var(--black);
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    gap: 100px;
+    text-align: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo h1{
+    padding-top: 20px;
+}
+
+.navbar .logo img{
+    padding: 10px;
+    border-radius: 50%;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+    padding: 20px;
+}
+
+.navbar ul {
+    display: inline-block;
+}
+
+.navbar ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.navbar ul li a:hover {
+    color: var(--blue);
+}
+
+.navbar nav ul {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+/* index page dashboard */
+
+.dashboard{
+    width: 1100px;
+    margin: auto;
+}
+.dashboard .row{
+    display: flex;
+    gap: 50px;
+    margin: 50px auto;
+}
+.dashboard .dashboard_div{
+    width: 300px;
+    height: 150px;
+    padding: 20px;
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+}
+.dashboard_div h3 span{
+    padding: 15px;
+    color: var(--red);
+    background-color: var(--white);
+    border-radius: 40%;
+}
+.dashboard .jobseekers{
+    background-color: var(--gray);
+}
+.dashboard .company,
+.dashboard .other_posts{
+    background-color: var(--brown);
+}
+.dashboard .employers{
+    background-color: var(--violet);
+}
+.dashboard .applications{
+    background-color: var(--orange);
+}
+.dashboard .job_posts{
+    background-color: var(--blue);
+}
+.dashboard .resumes{
+    background-color: var(--green);
+}
+.dashboard .india_company,
+.dashboard .frontend_posts{
+    background-color: var(--red);
+}
+.dashboard .other_company,
+.dashboard .backend_posts{
+    background-color: var(--black);
+}
+
+.footer .copyright{
+    padding: 20px 0px;
+    text-align: center;
+    color: var(--violet);
+}
+
+
+
+
+
+/* ------------------- Main Content of Dashboard Forms --------------------- */
+
+.dashboard-form{
+    margin-top: 30px;
+}
+.form{
+    max-width: 80%;
+    margin: 0 auto;
+    outline: none;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding: 20px 10px;
+}
+.form h1{
+    padding-bottom: 30px;
+    text-align: center;
+    color: var(--black);
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+}
+label{
+    font-size: 14px;
+    color: var(--gray);
+    padding: 5px;
+}
+input,
+textarea{
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    outline: none;
+}
+.buttons div{
+    width: 100px;
+    padding: 10px;
+}
+.buttons input{
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+.btn ,
+.btn-1{
+    cursor: pointer;
+}
+.btn{
+    background: var(--submit);
+    color: var(--white);
+}
+.btn-1{
+    background: var(--gray);
+    color: var(--white);
+}
+
+.add-btn a{
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+
+/* --------------------------------------------------
+               Display Form Details
+---------------------------------------------------- */
+
+.dashboard-form .display{
+    max-width: 1200px;
+    margin: 0 auto;
+    outline: none;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.display .col-2{
+    padding-left: 50px;
+}
+.table{
+    max-width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display input{
+    width: 80%;
+}
+.display .search,
+.display>a{
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 7px;
+}
+.table{
+    margin-top: 30px;
+}
+table ,tr, th, td{
+    border: 1px solid var(--light);
+    border-collapse: collapse;
+    text-align: left;
+}
+th{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--black);
+    padding: 10px;
+    text-align: center;
+}
+td{
+    font-size: 13px;
+    font-weight: 200;
+    color: var(--gray);
+    padding: 20px 10px;
+}
+tr:nth-child(even){
+    background: var(--form);
+}
+tr:hover{
+    background: var(--background);
+}
+button{
+    cursor: pointer;
+}
+.update{
+    outline: none;
+    padding: 10px;
+    color: var(--white);
+    background: var(--black);
+}
+.delete{
+    outline: none;
+    padding: 10px;
+    color: var(--white);
+    background: var(--red);
+    border: 1px solid var(--black);
+}
+
+a{
+    color: var(--white);
+}
+
+
+/* Profile page */
+.dashboard-form .profile_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_name div{
+    display: flex;
+}
